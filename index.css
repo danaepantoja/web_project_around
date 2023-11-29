@@ -41,7 +41,7 @@
 }
 
 .profile__image{
-    
+
 }
 
 .profile__info{
@@ -119,11 +119,10 @@
 }
 
 .footer{
-    width: 318px;
+    width: 880px;
     height: 18px;
     margin: auto;
     padding-top: 68px;
-    text-align: left;
 }
 
 .footer__copyrigth{
