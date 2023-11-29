@@ -5,3 +5,10 @@
     background: #545454;
     margin-top: 42px;
 }
+
+@media screen and (max-width:320px){
+    .header__line{
+        margin-top: 32px;
+    }
+
+}

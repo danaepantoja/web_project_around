@@ -3,3 +3,12 @@
     height: auto;
     margin: auto;
 }
+
+@media screen and (max-width:320px){
+    .header{
+        width: 320px;
+        height: 56px;
+        padding-left: 27px;
+    }
+
+}
