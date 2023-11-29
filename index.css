@@ -12,28 +12,16 @@
 @import url(../blocks/elements/element.css);
 @import url(../blocks/elements/__info.css);
 @import url(../blocks/elements/__title.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__copyrigth.css);
+
+
 @font-face {
     font-family: "Inter";
     src:  url(.//vendor/fonts/Inter-Regular.woff) format("wof"),
     url(.//vendor/fonts/Inter-Regular.woff2) format("woff2");
 }
 
-.footer{
-    width: 880px;
-    height: 18px;
-    margin: auto;
-    padding-top: 68px;
-    padding-bottom: 60px;
-}
-
-.footer__copyrigth{
-    color: #545454;
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
 
 .button__edit{
     border: none;
