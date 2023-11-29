@@ -8,49 +8,14 @@
 @import url(../blocks/profile/__info.css);
 @import url(../blocks/profile/__name.css);
 @import url(../blocks/profile/__hobbie.css);
-
+@import url(../blocks/elements/elements.css);
+@import url(../blocks/elements/element.css);
+@import url(../blocks/elements/__info.css);
+@import url(../blocks/elements/__title.css);
 @font-face {
     font-family: "Inter";
     src:  url(.//vendor/fonts/Inter-Regular.woff) format("wof"),
     url(.//vendor/fonts/Inter-Regular.woff2) format("woff2");
-}
-
-.elements{
-    display: flex;
-    width: 880px;
-    height: 744px;
-    margin: auto;
-    list-style: none;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-top: 48px;
-    row-gap: 20px;
-}
-
-.element{
-    display: flex;
-    width: 282px;
-    height: 361px;
-    border-radius: 10px;
-    background: #FFF;
-    flex-direction: column;
-}
-
-.element__info{
-    display: flex;
-    width: 246px;
-    justify-content: space-between;
-    padding-left: 21px;
-}
-
-
-.element__title{
-    color: #000;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
 }
 
 .footer{
