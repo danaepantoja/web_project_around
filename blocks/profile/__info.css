@@ -7,3 +7,9 @@
     padding-left: 27px;
     padding-top: 22px;
 }
+
+@media screen and (max-width:320px){
+    .profile__info{
+         align-items: center;
+    }
+}

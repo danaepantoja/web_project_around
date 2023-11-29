@@ -5,3 +5,13 @@
     padding-top: 37px;
     margin: auto;
 }
+
+@media screen and (max-width:320px){
+    .profile{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+}
