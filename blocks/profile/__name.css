@@ -1,0 +1,13 @@
+.profile__name{
+    width: 373px;
+    height: 39px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px; /* 114.286% */
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}

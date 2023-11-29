@@ -3,6 +3,12 @@
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__title.css);
 @import url(../blocks/header/__line.css);
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/profile/__image.css);
+@import url(../blocks/profile/__info.css);
+@import url(../blocks/profile/__name.css);
+@import url(../blocks/profile/__hobbie.css);
+
 @font-face {
     font-family: "Inter";
     src:  url(.//vendor/fonts/Inter-Regular.woff) format("wof"),
@@ -23,7 +29,7 @@
         flex-wrap: wrap;
         
     }
-    .profile__info_name{
+    .profile__name{
         width: 196px;
         height: 22px;
         font-size: 22px;
@@ -34,54 +40,8 @@
     }
 
 }
-.profile{
-    width: 880px;
-    height: auto;
-    display: flex;
-    padding-top: 37px;
-    margin: auto;
-}
-
-.profile__image{
-    width: 120px;
-    height: 120px;
-}
-
-.profile__info{
-    width: 415px;
-    height: 77px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-left: 27px;
-    padding-top: 22px;
-}
-
-.profile__name{
-    width: 373px;
-    height: 39px;
-    color: #FFF;
-    font-family: Inter;
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 48px; /* 114.286% */
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-}
 
 
-.profile__hobbie{
-    color: #FFF;
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin: 0;
-    padding-top: 16px;
-}
 
 .elements{
     display: flex;
