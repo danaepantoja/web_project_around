@@ -14,6 +14,9 @@
 @import url(../blocks/elements/__title.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__copyrigth.css);
+@import url(../blocks/button/__edit.css);
+@import url(../blocks/button/__add.css);
+@import url(../blocks/button/__like.css);
 
 
 @font-face {
@@ -21,23 +24,3 @@
     src:  url(.//vendor/fonts/Inter-Regular.woff) format("wof"),
     url(.//vendor/fonts/Inter-Regular.woff2) format("woff2");
 }
-
-
-.button__edit{
-    border: none;
-    background: none;
-    width: 24px;
-    height: 24px;
-    padding-top: 15px;
-}
-.button__add{
-    border: none;
-    background: none;
-    padding-left: 165px;
-}
-
-.button__like{
-    border: none;
-    background: none;;
-}
-
