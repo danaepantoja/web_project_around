@@ -27,6 +27,11 @@
 
 .popup {
     display: none;
+    width: 100%;
+    position: fixed; 
+    height: 100vh; 
+    top: 0;
+    left: 0;
 }
 
 .popup__overlay{
@@ -46,7 +51,7 @@
     justify-content: center;
 }
 
-@media screen and (max-width:320px){
+@media screen and (max-width:767px){
     .popup__content{
         width: 282px;
         height: 322px;
@@ -86,7 +91,7 @@
     }
     
     .line{
-        width: 358px;
+        width: 238px;
         height: 1px;
         opacity: 0.2;
         background: #000;
@@ -94,8 +99,8 @@
         margin-bottom: 26px;
     }
     .save{
-        width: 358px;
-        height: 50.152px;
+        width: 238px;
+        height: 46px;
         border-radius: 2px;
         background: #000;
         margin-left: 36px;
@@ -115,7 +120,7 @@
     z-index: 1;
     border: none;
     background: none;
-    margin-left: 50%;
+    margin-left: 30%;
 }
 
 .popup__form{
