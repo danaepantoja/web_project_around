@@ -7,7 +7,7 @@
 @import url(../blocks/profile/__image.css);
 @import url(../blocks/profile/__info.css);
 @import url(../blocks/profile/__name.css);
-@import url(../blocks/profile/__hobbie.css);
+@import url(../blocks/profile/__job.css);
 @import url(../blocks/elements/elements.css);
 @import url(../blocks/elements/element.css);
 @import url(../blocks/elements/__info.css);
@@ -48,7 +48,47 @@
 
 .popup__content{
     width: 430px;
-    background-color: white;
+    height: 330px;
+    flex-shrink: 0;
     z-index: 1;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
 
+}
+
+.popup__button-close{
+    z-index: 1;
+    border: none;
+    background: none;
+}
+
+.popup__form{
+    color: black;
+}
+
+.popup__set{
+    border:none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.save__button{
+    width: 358px;
+    height: 50.152px;
+    border-radius: 2px;
+    background: #000;
+}
+
+.text__save{
+    width: 109px;
+    height: 18px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }

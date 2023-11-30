@@ -21,7 +21,7 @@
        <image class="profile__image" src="images/foto-perfil.jpg" alt="Foto de Perfil">
        <div class="profile__info">
        <p class="profile__name">Jacques Cousteau</p>
-       <p class="profile__hobbie">Explorer</p>
+       <p class="profile__job">Explorer</p>
        <button class="edit__button">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
         <rect x="0.5" y="0.5" width="23" height="23" stroke="white"/>
@@ -119,9 +119,20 @@
           </svg>
       </button>
       <div class="popup__content">
+        <h2 class="popup__title">Edit profile</h2>
         <form class="popup__form">
-            <label for="input-name" class="popup__label">Nombre</label>
+            <fieldset class="popup__set">
+            <input type="text" class="form__input" name="name" placeholder="Nombre">
+            <span class="form__error"></span>
+
+            <input type="text" class="form__input" name="job" placeholder="Trabajo">
+            <span class="form__error"></span>
+
+        </fieldset>
         </form>
+       <button class="save__button">
+        <p class="text__save">Save</p>
+       </button>
       </div>
    </div>
 
