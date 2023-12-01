@@ -6,4 +6,5 @@
 .button__like_typt_traslate:hover{
     fill: #000;
     opacity: 0.5;
+    cursor: pointer;
 }
