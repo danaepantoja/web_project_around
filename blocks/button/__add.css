@@ -1,7 +1,12 @@
 .button__add{
     border: none;
     background: none;
-    padding-left: 165px;
+    padding: 0;
+    margin-left: 165px;
+}
+
+.button__add_typt_traslate:hover{
+    opacity: .6;
 }
 
 @media screen and (max-width:767px){
