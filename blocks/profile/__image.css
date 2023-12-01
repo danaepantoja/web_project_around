@@ -3,7 +3,7 @@
     height: 120px;
 }
 
-@media screen and (max-width:320px){
+@media screen and (max-width:767px){
     .profile__image{
      width: 168.75px;
      height: 127.5px;
