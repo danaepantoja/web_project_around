@@ -1,0 +1,17 @@
+.popup__button-close{
+    z-index: 1;
+    border: none;
+    background: none;
+    margin-left: 30%;
+}
+
+.popup__button-close_type_traslate:hover{
+    opacity: .6;
+}
+
+@media screen and (max-width:767px){
+    .popup__button-close{
+        width: 26px;
+        height: 26px;
+    }
+}

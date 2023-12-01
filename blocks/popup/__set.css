@@ -1,0 +1,8 @@
+.popup__set{
+    border:none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin: 0;
+    padding: 0;
+}
