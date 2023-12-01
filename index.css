@@ -34,3 +34,10 @@
     src:  url(.//vendor/fonts/Inter-Regular.woff) format("wof"),
     url(.//vendor/fonts/Inter-Regular.woff2) format("woff2");
 }
+
+.profile__eclipse{
+    width: 120px;
+height: 120px;
+fill: #C4C4C4;
+position: absolute;
+}
