@@ -13,5 +13,8 @@
     .popup__button-close{
         width: 26px;
         height: 26px;
+        padding: 0;
+        margin-bottom: 15px;
+        margin-left: 80%;
     }
 }

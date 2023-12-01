@@ -1,4 +1,11 @@
 .save{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     width: 358px;
     height: 50.152px;
     border-radius: 2px;
