@@ -14,9 +14,9 @@
 @import url(../blocks/elements/__title/__title.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__copyrigth/__copyrigth.css);
-@import url(../blocks/button/__edit.css);
-@import url(../blocks/button/__add.css);
-@import url(../blocks/button/__like.css);
+@import url(../blocks/button/__edit/__edit.css);
+@import url(../blocks/button/__add/__add.css);
+@import url(../blocks/button/__like/__like.css);
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/__overlay.css);
 @import url(../blocks/popup/__show.css);
