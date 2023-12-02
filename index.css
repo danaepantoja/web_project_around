@@ -13,7 +13,7 @@
 @import url(../blocks/elements/__info/__info.css);
 @import url(../blocks/elements/__title/__title.css);
 @import url(../blocks/footer/footer.css);
-@import url(../blocks/footer/__copyrigth.css);
+@import url(../blocks/footer/__copyrigth/__copyrigth.css);
 @import url(../blocks/button/__edit.css);
 @import url(../blocks/button/__add.css);
 @import url(../blocks/button/__like.css);
