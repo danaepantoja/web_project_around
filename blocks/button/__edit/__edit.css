@@ -7,12 +7,6 @@
     margin-top: 15px;
 }
 
-.edit__button_typt_traslate:hover{
-    border: 1px solid #FFF;
-    opacity: .6;
-    cursor: pointer;
-}
-
 @media screen and (max-width:767px){
     .edit__button{
       margin-top: 0;

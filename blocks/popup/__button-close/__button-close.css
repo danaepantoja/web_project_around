@@ -5,11 +5,6 @@
     margin-left: 30%;
 }
 
-.popup__button-close_type_traslate:hover{
-    opacity: .6;
-    cursor: pointer;
-}
-
 @media screen and (max-width:767px){
     .popup__button-close{
         width: 26px;

@@ -5,11 +5,6 @@
     margin-left: 165px;
 }
 
-.button__add_typt_traslate:hover{
-    opacity: .6;
-    cursor: pointer;
-}
-
 @media screen and (max-width:767px){
     .button__add{
         width: 282px;

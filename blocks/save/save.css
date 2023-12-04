@@ -13,11 +13,6 @@
     margin-left: 36px;
 }
 
-.save_type_traslate:hover{
-    opacity: .8;
-    cursor: pointer;
-}
-
 @media screen and (max-width:767px){
     .save{
         width: 238px;
