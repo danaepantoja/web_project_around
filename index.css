@@ -6,10 +6,9 @@
 @import url(../blocks/footer.css);
 @import url(../blocks/button.css);
 @import url(../blocks/popup.css);
-@import url(../blocks/form/__input/__input.css);
-@import url(../blocks/line/line.css);
-@import url(../blocks/save/save.css);
-@import url(../blocks/save/__type_traslate/__type_traslate.css);
+@import url(../blocks/form.css);
+@import url(../blocks/line.css);
+@import url(../blocks/save.css);
 
 @font-face {
     font-family: "Inter";
