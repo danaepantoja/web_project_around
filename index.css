@@ -1,13 +1,7 @@
 @import url(../vendor/normalize.css);
 @import url(../blocks/page/page.css);
-@import url(../blocks/header/header.css);
-@import url(../blocks/header/__title/__title.css);
-@import url(../blocks/header/__line/__line.css);
-@import url(../blocks/profile/profile.css);
-@import url(../blocks/profile/__image/__image.css);
-@import url(../blocks/profile/__info/__info.css);
-@import url(../blocks/profile/__name/__name.css);
-@import url(../blocks/profile/__job/__job.css);
+@import url(../blocks/header.css);
+@import url(../blocks/profile.css);
 @import url(../blocks/elements/elements.css);
 @import url(../blocks/elements/elment/element.css);
 @import url(../blocks/elements/__info/__info.css);
