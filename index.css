@@ -1,15 +1,10 @@
 @import url(../vendor/normalize.css);
-@import url(../blocks/page/page.css);
+@import url(../blocks/page.css);
 @import url(../blocks/header.css);
 @import url(../blocks/profile.css);
 @import url(../blocks/elements.css);
 @import url(../blocks/footer.css);
-@import url(../blocks/button/__edit/__edit.css);
-@import url(../blocks/button/__edit_typt_traslate/__edit_typt_traslate.css);
-@import url(../blocks/button/__add/__add.css);
-@import url(../blocks/button/__add_typt_traslate/__add_typt_traslate.css);
-@import url(../blocks/button/__like/__like.css);
-@import url(../blocks/button/__like_typt_traslate/__like_typt_traslate.css);
+@import url(../blocks/button.css);
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/__overlay/__overlay.css);
 @import url(../blocks/popup/__show/__show.css);
