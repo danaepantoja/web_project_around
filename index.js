@@ -26,4 +26,26 @@ formProfile.addEventListener('submit', function(event){
     profileJob.textContent = inputJob.value;
     formProfile.reset();
     togglePopup(popupProfile);
-})
+});
+
+
+
+const buttonAdd = document.querySelector('.button__add')
+const popupAdd = document.querySelector('.popup_content_add')
+const closeButtonAdd = popupAdd.querySelector('.popup__button-close')
+
+const formAdd =popupAdd.querySelector('.popup_set_add')
+const inputTitle = popupAdd.querySelector('.form__input_add[name="title"]');
+const inputEnlace = popupAdd.querySelector('.form__input_add[name="enlace"]');
+
+function togglePopup(popup){
+    popupAdd.classList.toggle('popup_show_add')
+}
+
+buttonAdd.addEventListener('click', function(){
+    togglePopup(popupAdd);
+});
+
+closeButtonAdd.addEventListener('click', function(){
+    togglePopup(popupAdd);
+});
