@@ -51,7 +51,7 @@ const inputName = popupProfile.querySelector('.form__input[name="name"]');
 const inputJob = popupProfile.querySelector('.form__input[name="job"]');
 
 function togglePopup(popup){
-    popupProfile.classList.toggle('popup_show')
+    popup.classList.toggle('popup_show')
 }
 
 buttonEdit.addEventListener('click', function(){
@@ -79,10 +79,6 @@ const closeButtonAdd = popupAdd.querySelector('.popup__button-close')
 const formAdd =popupAdd.querySelector('.popup_set_add')
 const inputTitle = popupAdd.querySelector('.form__input_add[name="title"]');
 const inputEnlace = popupAdd.querySelector('.form__input_add[name="enlace"]');
-
-function togglePopup(popup){
-    popupAdd.classList.toggle('popup_show_add')
-}
 
 buttonAdd.addEventListener('click', function(){
     togglePopup(popupAdd);
