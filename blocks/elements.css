@@ -47,3 +47,10 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+.element__image{
+    width: 282px;
+    height: 282px;
+    border-radius: 10px 10px 0px 0px;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
