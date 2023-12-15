@@ -1,3 +1,14 @@
+const buttonAdd = document.querySelector('.button__add')
+console.log(buttonAdd)
+const popupAdd = document.querySelector('.popup_content_add')
+const closeButtonAdd = popupAdd.querySelector('.popup__button-close')
+
+const formAdd =popupAdd.querySelector('.popup__form_add')
+console.log(formAdd)
+const inputTitle = popupAdd.querySelector('.form__input_add[name="title"]');
+const inputEnlace = popupAdd.querySelector('.form__input_add[name="enlace"]');
+
+
 const cards = [
     {
       name: "Valle de Yosemite",
@@ -27,7 +38,7 @@ const cards = [
   
 const container = document.querySelector(".elements");
 cards.forEach(function (item) {
-
+console.log(item)
 const template = document.querySelector("#element-template").content;
 const element = template.querySelector(".element").cloneNode(true);
 
@@ -50,7 +61,30 @@ buttonLike.addEventListener('click', function(){
     buttonLike.classList.toggle('button_like-black')
 });
 
+const addTitle = element.querySelector('.element__title');
+const addImage = element.querySelector('.element__image');
+
+
+formAdd.addEventListener('submit', function(event){
+  event.preventDefault();
+  console.log(inputTitle.value)
+  console.log(inputEnlace.value)
+  /* const newdata = {
+    title:inputTitle.value,
+    link:inputEnlace.value
+  }
+  console.log(newdata)
+ cards.push(newdata) */
+ console.log(cards)
+ addTitle.innerText = inputTitle.value
+ addImage.src = inputEnlace.value
+  togglePopup(popupAdd);
+
+
+});
+
 container.append(element);
+
 });
   
 
@@ -86,14 +120,15 @@ formProfile.addEventListener('submit', function(event){
 
 
 
-const buttonAdd = document.querySelector('.button__add')
+/* const buttonAdd = document.querySelector('.button__add')
 const popupAdd = document.querySelector('.popup_content_add')
 const closeButtonAdd = popupAdd.querySelector('.popup__button-close')
 
 const formAdd =popupAdd.querySelector('.popup_set_add')
 const inputTitle = popupAdd.querySelector('.form__input_add[name="title"]');
 const inputEnlace = popupAdd.querySelector('.form__input_add[name="enlace"]');
-
+ */
+console.log(buttonAdd)
 buttonAdd.addEventListener('click', function(){
     togglePopup(popupAdd);
 });
@@ -101,3 +136,18 @@ buttonAdd.addEventListener('click', function(){
 closeButtonAdd.addEventListener('click', function(){
     togglePopup(popupAdd);
 });
+console.log(formAdd)
+/* formAdd.addEventListener('submit', function(event){
+  event.preventDefault();
+
+  const newdata = {
+    title:inputTitle.value,
+    link:inputEnlace.value
+  }
+  console.log(newdata)
+ cards.push(newdata)
+ console.log(cards)
+  togglePopup(popupAdd);
+
+}); */
+
