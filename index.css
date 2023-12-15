@@ -16,7 +16,7 @@
     url(.//vendor/fonts/Inter-SemiBold.woff2) format("woff2");
 }
 
-.button__trash{
+.button_trash{
     border: none;
     background: none;
     width: 18px;
@@ -27,7 +27,7 @@
     margin-left: 249px;
 }
 
-.button__trash_typt_traslate:hover{
+.button_trash:hover{
     opacity: 0.5;
     cursor: pointer;
 }

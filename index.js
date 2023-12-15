@@ -34,8 +34,21 @@ const element = template.querySelector(".element").cloneNode(true);
 const imageElement = element.querySelector(".element__image");
 const titleElement = element.querySelector(".element__title");
 
+const buttonTrash = element.querySelector(".button_trash");
+const buttonLike = element.querySelector(".button_like");
+
+
 imageElement.src = item.link
-titleElement.innerText = item.name
+titleElement.innerText = item.name;
+
+
+buttonTrash.addEventListener ("click", function(){
+    element.remove();
+});
+
+buttonLike.addEventListener('click', function(){
+    buttonLike.classList.toggle('button_like-black')
+})
 
 container.append(element);
 })
