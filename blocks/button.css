@@ -13,22 +13,45 @@
     cursor: pointer;
 }
 
-@media screen and (max-width:767px){
-    .edit__button{
-      margin-top: 0;
-     }
- }
-
  .button__add{
     border: none;
     background: none;
     padding: 0;
     margin-left: 165px;
 }
+.add-button{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 358px;
+    height: 50.152px;
+    border-radius: 2px;
+    background: #000;
+    margin-left: 36px;
+}
 
+.add-button:hover{
+    opacity: .8;
+    cursor: pointer;
+}
 .button__add_typt_traslate:hover{
     opacity: .6;
     cursor: pointer;
+}
+
+.button_trash{
+    border: none;
+    background: none;
+    width: 18px;
+    height: 19.3px;
+    position: absolute;
+    padding: 0;
+    margin-top: 18px;
+    margin-left: 249px;
 }
 
 .button_like{
@@ -50,6 +73,11 @@
     cursor: pointer;
 }
 
+.button_trash:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 @media screen and (max-width:767px){
     .button__add{
         width: 282px;
@@ -57,5 +85,14 @@
         border-radius: 2px;
         margin: 0;
     }
-}
+
+    .edit__button{
+      margin-top: 0;
+     }
+    .add-button{
+        width: 238px;
+        height: 46px;
+        margin-left: 22px;
+     }
+ }
 

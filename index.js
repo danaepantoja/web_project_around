@@ -48,11 +48,12 @@ buttonTrash.addEventListener ("click", function(){
 
 buttonLike.addEventListener('click', function(){
     buttonLike.classList.toggle('button_like-black')
-})
+});
 
 container.append(element);
-})
+});
   
+
 const buttonEdit = document.querySelector('.edit__button')
 const popupProfile = document.querySelector('.popup_content_edit-profile')
 const closeButton = popupProfile.querySelector('.popup__button-close')
