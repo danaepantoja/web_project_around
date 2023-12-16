@@ -7,7 +7,7 @@
     margin-top: 15px;
 }
 
-.button_edit_typt_traslate:hover{
+.button_edit:hover{
     border: 1px solid #FFF;
     opacity: .6;
     cursor: pointer;
@@ -38,7 +38,7 @@
     opacity: .8;
     cursor: pointer;
 }
-.button__add_typt_traslate:hover{
+.button_add:hover{
     opacity: .6;
     cursor: pointer;
 }
@@ -79,14 +79,14 @@
 }
 
 @media screen and (max-width:767px){
-    .button__add{
+    .button_add{
         width: 282px;
         height: 50px;
         border-radius: 2px;
         margin: 0;
     }
 
-    .edit__button{
+    .button_edit{
       margin-top: 0;
      }
     .add-button{
