@@ -9,7 +9,7 @@
 @import url(../blocks/form.css);
 @import url(../blocks/line.css);
 @import url(../blocks/save.css);
-@import url(../blocks/content.css);
+@import url(../blocks/block.css);
 
 @font-face {
     font-family: "Inter";
