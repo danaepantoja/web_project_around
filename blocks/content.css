@@ -1,0 +1,33 @@
+.content__image{
+    z-index: 1;
+}
+
+.image-grand{
+    width: 433px;
+    height: 540px;
+}
+
+@media screen and (max-width:767px){
+    .content__image{
+        width: 240px;
+        height: auto;
+        z-index: 1;
+    }
+
+
+    .image-grand{
+     width: 240px;
+     height: 299px;
+    }
+}
+
+.image-text{
+    width: 291px;
+    height: 12px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
