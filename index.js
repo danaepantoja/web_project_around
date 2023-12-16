@@ -13,8 +13,8 @@ const closeButton = popupProfile.querySelector(".popup__button-close");
 const profileName = document.querySelector(".profile__name");
 const profileJob = document.querySelector(".profile__job");
 const formProfile = popupProfile.querySelector(".popup__form");
-const inputName = popupProfile.querySelector('.form__input[name="name"]');
-const inputJob = popupProfile.querySelector('.form__input[name="job"]');
+const inputName = popupProfile.querySelector('.form_input[name="name"]');
+const inputJob = popupProfile.querySelector('.form_input[name="job"]');
 
 const container = document.querySelector(".elements");
 
