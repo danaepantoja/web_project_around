@@ -1,4 +1,4 @@
-.edit__button{
+.button_edit{
     border: none;
     background: none;
     width: 24px;
@@ -7,13 +7,13 @@
     margin-top: 15px;
 }
 
-.edit__button_typt_traslate:hover{
+.button_edit_typt_traslate:hover{
     border: 1px solid #FFF;
     opacity: .6;
     cursor: pointer;
 }
 
- .button__add{
+ .button_add{
     border: none;
     background: none;
     padding: 0;
