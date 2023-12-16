@@ -3,8 +3,8 @@ const popupAdd = document.querySelector(".popup_content_add");
 const closeButtonAdd = popupAdd.querySelector(".popup__button-close");
 
 const formAdd = popupAdd.querySelector(".popup__form_add");
-const inputTitle = popupAdd.querySelector('.form__input_add[name="title"]');
-const inputEnlace = popupAdd.querySelector('.form__input_add[name="enlace"]');
+const inputTitle = popupAdd.querySelector('.form_input_add[name="title"]');
+const inputEnlace = popupAdd.querySelector('.form_input_add[name="enlace"]');
 
 const buttonEdit = document.querySelector(".button_edit");
 const popupProfile = document.querySelector(".popup_content_edit-profile");
