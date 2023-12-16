@@ -18,8 +18,8 @@ const inputJob = popupProfile.querySelector('.form__input[name="job"]');
 
 const container = document.querySelector(".elements");
 
-const popupImage = document.querySelector(".popup_content_image")
-const closeButtonImage= popupImage.querySelector(".popup__button-close");
+const popupImage = document.querySelector(".popup_content_image");
+const closeButtonImage = popupImage.querySelector(".popup__button-close");
 
 const cards = [
   {
@@ -59,10 +59,11 @@ const renderCard = (name, link) => {
   const buttonTrash = element.querySelector(".button_trash");
   const buttonLike = element.querySelector(".button_like");
 
-  const openImage = document.querySelector(".element__image")
+  const openImage = element.querySelector(".element__image")
 
   titleElement.innerText = name;
   imageElement.src = link;
+ 
 
   buttonTrash.addEventListener("click", function () {
     element.remove();
@@ -73,8 +74,11 @@ const renderCard = (name, link) => {
   });
 
   openImage.addEventListener("click", function () {
+ 
+    document.querySelector(".image-grand").src = link;
+    document.querySelector(".image-text").innerText = name;
     togglePopup(popupImage);
-  }); 
+  });  
   
   container.prepend(element);
 };

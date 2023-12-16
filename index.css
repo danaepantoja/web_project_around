@@ -25,6 +25,10 @@
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
 } 
 
+.content__image{
+    z-index: 1;
+}
+
 .image-grand{
     width: 433px;
     height: 540px;
