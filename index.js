@@ -44,7 +44,7 @@ const cards = [
   },
 ];
 
-// MANIPULACIÓN DOM
+
 const renderCard = (name, link) => {
   const template = document.querySelector("#element-template").content;
   const element = template.querySelector(".element").cloneNode(true);
@@ -66,7 +66,7 @@ const renderCard = (name, link) => {
     buttonLike.classList.toggle("button_like-black");
   });
 
-  container.append(element);
+  container.prepend(element);
 };
 
 function togglePopup(popup) {
@@ -104,8 +104,9 @@ formAdd.addEventListener("submit", function (event) {
   togglePopup(popupAdd);
 });
 
-// INIT - INICIALIZACIÓN
-// AL MOMENTO DE CARGAR EL SITIO INICIALMENTE...
+
+
+
 cards.forEach(function (item) {
   renderCard(item.name, item.link);
 });

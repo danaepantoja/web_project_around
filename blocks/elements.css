@@ -1,12 +1,12 @@
 .elements{
     display: flex;
     width: 880px;
-    height: 744px;
+    height: auto;
     margin: auto;
     list-style: none;
-    flex-direction: column;
     flex-wrap: wrap;
     padding-top: 48px;
+    column-gap: 17px;
     row-gap: 20px;
 }
 
