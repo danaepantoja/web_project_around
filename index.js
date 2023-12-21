@@ -111,6 +111,14 @@ closeButtonAdd.addEventListener("click", function () {
   togglePopup(popupAdd);
 });
 
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    if (popupImage.classList.contains('popup_show')) {
+      togglePopup(popupImage);
+    }
+  }
+});
+
 formAdd.addEventListener("submit", function (event) {
   event.preventDefault();
   renderCard(inputTitle.value, inputEnlace.value);
