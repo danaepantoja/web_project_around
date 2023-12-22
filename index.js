@@ -116,6 +116,12 @@ document.addEventListener('keydown', function(event) {
     if (popupImage.classList.contains('popup_show')) {
       togglePopup(popupImage);
     }
+    if (popupAdd.classList.contains('popup_show')) {
+      togglePopup(popupAdd);
+    }
+    if (popupProfile.classList.contains('popup_show')) {
+      togglePopup(popupProfile);
+    }
   }
 });
 
