@@ -1,7 +1,7 @@
 .elements{
     display: flex;
     width: 880px;
-    height: 745px;
+    height: auto;
     margin: auto;
     list-style: none;
     flex-wrap: wrap;
