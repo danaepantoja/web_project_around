@@ -13,7 +13,7 @@ const closeButton = popupProfile.querySelector(".popup__button-close");
 const profileName = document.querySelector(".profile__name");
 const profileJob = document.querySelector(".profile__job");
 const formProfile = popupProfile.querySelector(".popup__form");
-const inputName = popupProfile.querySelector('.form_input[name="name"]');
+const inputName = popupProfile.querySelector('.form_input[name="name"]'); 
 const inputJob = popupProfile.querySelector('.form_input[name="job"]');
 
 const container = document.querySelector(".elements");
@@ -99,9 +99,9 @@ formProfile.addEventListener("submit", function (event) {
   event.preventDefault();
   profileName.textContent = inputName.value;
   profileJob.textContent = inputJob.value;
-  formProfile.reset();
   togglePopup(popupProfile);
-});
+}); 
+
 
 buttonAdd.addEventListener("click", function () {
   togglePopup(popupAdd);
