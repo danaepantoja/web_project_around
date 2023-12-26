@@ -59,8 +59,6 @@
     font-weight: 500;
     line-height: 48px; /* 114.286% */
     margin: 0;
-    display: flex;
-    justify-content: space-between;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
