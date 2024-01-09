@@ -49,11 +49,11 @@
         <form class="popup__form">
             <fieldset class="popup__set">
             <input type="text" class="form form_input" name="name" placeholder="Name" minlength="2" maxlength="40" value="Jacques Cousteau" required>
-            <div class="line"></div>
-            <span class="form form_error"></span>
+            
+            <span class="form form_error form_error-name"></span>
 
             <input type="text" class="form form_input" name="job" placeholder="About" minlength="20" maxlength="200" value="Explorer" required>
-            <div class="line"></div>
+            
             <span class="form form_error"></span>
            </fieldset>
 
@@ -75,12 +75,16 @@
         <form class="popup__form popup__form_add">
             <div class="popup__set popup__set_add">
             <input type="text" class="form form_input form_input_add" name="title" placeholder="Title" minlength="2" maxlength="30" value="" required>
-        <div class="line"></div>
+            <span class="form form_error form_error-title"></span>
+
+
 
             <input type="url" class="form form_input form_input_add" name="enlace" placeholder="URL" value="" required>
-        <div class="line"></div>
+            <span class="form form_error form_error-enlace"></span>
 
-            <input type="submit" class="add-button" name="crear" value="Crear">
+        
+
+            <input type="submit" class="save add-button" name="crear" value="Crear">
     
         </div>
         </form>

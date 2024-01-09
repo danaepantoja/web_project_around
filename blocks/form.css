@@ -9,6 +9,16 @@
     line-height: normal;
     border: none;
     margin-left: 36px;
+    border-bottom: 1px solid gray;
+}
+
+.form_input_has-error{
+    border-bottom: 1px solid red;
+}
+.form_error{
+    color:red;
+    width: 358px;
+    margin-left: 36px;
 }
 
 @media screen and (max-width:767px){
