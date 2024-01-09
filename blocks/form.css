@@ -10,6 +10,7 @@
     border: none;
     margin-left: 36px;
     border-bottom: 1px solid gray;
+    margin-top: 10px;
 }
 
 .form_input_has-error{
