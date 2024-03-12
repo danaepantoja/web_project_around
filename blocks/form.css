@@ -20,6 +20,8 @@
     color:red;
     width: 358px;
     margin-left: 36px;
+    font-size: 12px;
+
 }
 
 @media screen and (max-width:767px){
