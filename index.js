@@ -85,6 +85,7 @@ const renderCard = (name, link, alt) => {
   openImage.addEventListener("click", function () {
  
     document.querySelector(".image-grand").src = link;
+    document.querySelector(".image-grand").alt = name;
     document.querySelector(".image-text").innerText = name;
     togglePopup(popupImage);
   });  
