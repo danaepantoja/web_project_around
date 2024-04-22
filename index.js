@@ -149,3 +149,16 @@ closeButtonImage.addEventListener("click", function () {
 cards.forEach(function (item) {
   renderCard(item.name, item.link, item.alt);
 });
+
+import { FormValidator } from './FormValidator.js';
+import { Card } from './Card.js';
+
+
+const configForm = {
+};
+
+const formElement = document.querySelector('.popup__form');
+const formValidator = new FormValidator(configForm, formElement);
+formValidator.enableValidation();
+
+const card = new Card('Nombre de la tarjeta', 'URL de la imagen');
