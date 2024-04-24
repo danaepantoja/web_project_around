@@ -71,12 +71,3 @@ class FormValidator {
   
 
   formValidator.enableValidation();
-
-  export class FormValidator {
-    constructor(config, formElement) {
-    }
-  
-    enableValidation() {
-    }
-  
-  }
