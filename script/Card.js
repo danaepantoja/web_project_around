@@ -92,8 +92,3 @@ class Card {
     document.querySelector(".elements").append(card.getElement());
   });
 
-  export class Card {
-    constructor(name, link) {
-    }
-  
-  }
