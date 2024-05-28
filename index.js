@@ -137,7 +137,8 @@ document.addEventListener('keydown', function(event) {
 
 formAdd.addEventListener("submit", function (event) {
   event.preventDefault();
-  renderCard(inputTitle.value, inputEnlace.value);
+  const card = new Card(inputTitle.value, inputEnlace.value).getElement();
+  container.prepend(card);
   formAdd.reset();
   togglePopup(popupAdd);
 });
