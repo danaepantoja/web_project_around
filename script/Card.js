@@ -1,4 +1,4 @@
-class Card {
+export class Card {
     constructor(name, link) {
       this.name = name;
       this.link = link;
@@ -55,7 +55,7 @@ class Card {
   }
   
  
-  function togglePopup(popup) {
+  export function togglePopup(popup) {
     popup.classList.toggle("popup_show");
   }
   
@@ -91,4 +91,3 @@ class Card {
     const card = new Card(item.name, item.link);
     document.querySelector(".elements").append(card.getElement());
   });
-

@@ -68,6 +68,3 @@ class FormValidator {
   
 
   const formValidator = new FormValidator(configForm, formElement);
-  
-
-  formValidator.enableValidation();

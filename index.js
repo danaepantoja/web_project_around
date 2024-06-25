@@ -1,5 +1,4 @@
 import {togglePopup, Card} from "./script/card.js";
-import {FormValidator} from "./script/formValidator.js";
 
 const buttonAdd = document.querySelector(".button_add");
 const popupAdd = document.querySelector(".popup_content_add");
@@ -118,6 +117,6 @@ closeButtonImage.addEventListener("click", function () {
   togglePopup(popupImage);
 });
 
-card.forEach(function (item) {
+Card.forEach(function (item) {
   renderCard(item.name, item.link, item.alt);
 });
