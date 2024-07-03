@@ -1,6 +1,7 @@
 import { enableValidation } from "./script/validate.js";
 import { cards, togglePopup, Card } from "./script/cards.js";
 import { configForm } from "./script/formValidator.js";
+import { addEventListeners } from "./script/utils.js";
 
 const buttonAdd = document.querySelector(".button_add");
 const popupAdd = document.querySelector(".popup_content_add");
@@ -27,7 +28,6 @@ const closeButtonImage = popupImage.querySelector(".popup__button-close");
 
 const forms = Array.from(document.querySelectorAll(".popup__form"));
 
-
 const renderCard = (name, link) => {
   const template = document.querySelector("#element-template").content;
   const element = template.querySelector(".element").cloneNode(true);
@@ -43,7 +43,6 @@ const renderCard = (name, link) => {
   titleElement.innerText = name;
   imageElement.src = link;
   imageElement.alt = name; 
- 
 
   buttonTrash.addEventListener("click", function () {
     element.remove();
@@ -54,69 +53,37 @@ const renderCard = (name, link) => {
   });
 
   openImage.addEventListener("click", function () {
- 
     document.querySelector(".image-grand").src = link;
     document.querySelector(".image-text").innerText = name;
     togglePopup(popupImage);
   });  
-  
+
   container.prepend(element);
 };
 
-buttonEdit.addEventListener("click", function () {
-  togglePopup(popupProfile);
+addEventListeners({
+  buttonEdit,
+  popupProfile,
+  closeButton,
+  formProfile,
+  profileName,
+  inputName,
+  profileJob,
+  inputJob,
+  buttonAdd,
+  popupAdd,
+  closeButtonAdd,
+  formAdd,
+  inputTitle,
+  inputEnlace,
+  container,
+  popupImage,
+  closeButtonImage,
+  cards,
+  renderCard,
+  forms,
+  enableValidation,
+  configForm,
+  togglePopup,
+  Card
 });
-
-closeButton.addEventListener("click", function () {
-  togglePopup(popupProfile);
-});
-
-formProfile.addEventListener("submit", function (event) {
-  event.preventDefault();
-  profileName.textContent = inputName.value;
-  profileJob.textContent = inputJob.value;
-  togglePopup(popupProfile);
-}); 
-
-
-buttonAdd.addEventListener("click", function () {
-  togglePopup(popupAdd);
-});
-
-closeButtonAdd.addEventListener("click", function () {
-  togglePopup(popupAdd);
-});
-
-document.addEventListener('keydown', function(event) {
-  if (event.key === 'Escape') {
-    if (popupImage.classList.contains('popup_show')) {
-      togglePopup(popupImage);
-    }
-    if (popupAdd.classList.contains('popup_show')) {
-      togglePopup(popupAdd);
-    }
-    if (popupProfile.classList.contains('popup_show')) {
-      togglePopup(popupProfile);
-    }
-  }
-});
-
-formAdd.addEventListener("submit", function (event) {
-  event.preventDefault();
-  const card = new Card(inputTitle.value, inputEnlace.value).getElement();
-  container.prepend(card);
-  formAdd.reset();
-  togglePopup(popupAdd);
-});
-
-closeButtonImage.addEventListener("click", function () {
-  togglePopup(popupImage);
-});
-
-cards.forEach(function (item) {
-  renderCard(item.name, item.link);
-});
-
-forms.forEach(form => {
-  enableValidation(form, configForm)
-})
