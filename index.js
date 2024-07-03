@@ -1,5 +1,6 @@
-import {togglePopup, Card} from "./script/card.js";
-import { FormValidator } from "./script/FormValidator.js";
+import { enableValidation } from "./script/validate.js";
+import { cards, togglePopup, Card } from "./script/cards.js";
+import { configForm } from "./script/formValidator.js";
 
 const buttonAdd = document.querySelector(".button_add");
 const popupAdd = document.querySelector(".popup_content_add");
@@ -26,13 +27,8 @@ const closeButtonImage = popupImage.querySelector(".popup__button-close");
 
 const forms = Array.from(document.querySelectorAll(".popup__form"));
 
-const configForm = {
-  submitButtonSelector: '.save', 
-  inputSelector: '.form_input',
-  submitButtonDisabledClass: 'save_disabled'
-};
 
-const renderCard = (name, link, alt) => {
+const renderCard = (name, link) => {
   const template = document.querySelector("#element-template").content;
   const element = template.querySelector(".element").cloneNode(true);
 
@@ -60,7 +56,6 @@ const renderCard = (name, link, alt) => {
   openImage.addEventListener("click", function () {
  
     document.querySelector(".image-grand").src = link;
-    document.querySelector(".image-grand").alt = name;
     document.querySelector(".image-text").innerText = name;
     togglePopup(popupImage);
   });  
@@ -118,6 +113,10 @@ closeButtonImage.addEventListener("click", function () {
   togglePopup(popupImage);
 });
 
-Card.forEach(function (item) {
-  renderCard(item.name, item.link, item.alt);
+cards.forEach(function (item) {
+  renderCard(item.name, item.link);
 });
+
+forms.forEach(form => {
+  enableValidation(form, configForm)
+})
