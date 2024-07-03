@@ -1,4 +1,5 @@
 import {togglePopup, Card} from "./script/card.js";
+import { FormValidator } from "./script/FormValidator.js";
 
 const buttonAdd = document.querySelector(".button_add");
 const popupAdd = document.querySelector(".popup_content_add");
