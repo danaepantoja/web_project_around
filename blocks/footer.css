@@ -7,15 +7,6 @@
     background-color: #000;
 }
 
-@media screen and (max-width:767px){
-    .footer{
-        width: 288px;
-        padding-top: 48px;
-        padding-bottom: 36px;
-    }
-
-}
-
 .footer__copyrigth{
     color: #545454;
     font-family: Inter;
@@ -25,4 +16,19 @@
     line-height: normal;
     width: 880px;
     margin:auto;
+}
+
+@media screen and (max-width:767px){
+    .footer{
+        width: 288px;
+        padding-top: 48px;
+        padding-bottom: 36px;
+    }
+
+    .footer__copyrigth{
+        width: 288px;
+        padding-top: 48px;
+        padding-bottom: 36px;
+    }
+
 }
