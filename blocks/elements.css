@@ -16,7 +16,7 @@
         height: auto;
         row-gap: 20px;
         column-gap: 10px; 
-        padding: 0 10px; 
+        justify-content: center;
     }
 
     .element {
